@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-01T14:40:16.309Z</updated>
+  <updated>2020-06-01T23:54:02.911Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/05/31/%E5%9F%BA%E4%BA%8EHeox+Next+GitHub%20Pages%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2020/05/31/%E5%9F%BA%E4%BA%8EHeox+Next+GitHub%20Pages%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/</id>
     <published>2020-05-31T02:48:43.000Z</published>
-    <updated>2020-06-01T14:40:16.309Z</updated>
+    <updated>2020-06-01T23:54:02.911Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-什么是Hexo"><a href="#1-什么是Hexo" class="headerlink" title="1 什么是Hexo"></a>1 什么是Hexo</h4><p>Hexo 官网地址 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo官网</a></p><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p></blockquote><a id="more"></a><h4 id="2-Hexo安装和部署"><a href="#2-Hexo安装和部署" class="headerlink" title="2 Hexo安装和部署"></a>2 Hexo安装和部署</h4><h5 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h5><ol><li>Node.js</li><li>Git</li></ol><h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><p><code>$ npm install hexo-cli -g</code></p><p><code>$ npm install hexo-deployer-git --save</code></p><p>第一个命令表示安装 hexo，第二个命令表示安装 hexo 部署到 git page 的 deployer</p><h5 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h5><p>在新建的博客文件夹下面新建一个Hexo的文件夹，在Hexo里输入以下命令：</p><p><code>$ hexo init</code></p><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/Snipaste_2020-05-31_16-32-03.png" alt=""></p><p>在本地查看效果</p><p><code>hexo generate</code> 或者 <code>hexo g</code></p><p><code>hexo server</code> 或者 <code>hexo s</code></p><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/007S8ZIlly1gfd5mh3u2pj30we03u74g.jpg" alt=""></p><p>登录到 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 查看效果：</p><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/007S8ZIlly1gfd5oc4zotj31sx0u012j.jpg" alt=""></p>]]></content>
     
@@ -34,6 +34,8 @@
     
     </summary>
     
+    
+      <category term="杂七杂八" scheme="http://yoursite.com/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/"/>
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
