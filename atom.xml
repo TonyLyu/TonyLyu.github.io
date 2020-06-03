@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://codehao.cn/"/>
-  <updated>2020-06-03T13:35:19.292Z</updated>
+  <updated>2020-06-03T15:08:30.863Z</updated>
   <id>https://codehao.cn/</id>
   
   <author>
@@ -17,36 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Untitled</title>
-    <link href="https://codehao.cn/2020/06/03/Untitled/"/>
-    <id>https://codehao.cn/2020/06/03/Untitled/</id>
-    <published>2020-06-03T13:35:19.292Z</published>
-    <updated>2020-06-03T13:35:19.292Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>docker教程（1）-centos下的安装于配置</title>
     <link href="https://codehao.cn/2020/06/03/docker%E6%95%99%E7%A8%8B%EF%BC%881%EF%BC%89-centos%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E4%BA%8E%E9%85%8D%E7%BD%AE/"/>
     <id>https://codehao.cn/2020/06/03/docker%E6%95%99%E7%A8%8B%EF%BC%881%EF%BC%89-centos%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E4%BA%8E%E9%85%8D%E7%BD%AE/</id>
     <published>2020-06-03T13:35:15.000Z</published>
-    <updated>2020-06-03T15:06:59.795Z</updated>
+    <updated>2020-06-03T15:08:30.863Z</updated>
     
-    <content type="html"><![CDATA[<p>#####安装yum扩展安装工具和存储驱动程序</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install -y yum-utils device-mapper-persistent-data lvm2</span></span><br></pre></td></tr></table></figure><h5 id="添加阿里云的docker镜像repo并生成缓存"><a href="#添加阿里云的docker镜像repo并生成缓存" class="headerlink" title="添加阿里云的docker镜像repo并生成缓存"></a>添加阿里云的docker镜像repo并生成缓存</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> yum makecache fast</span></span><br></pre></td></tr></table></figure><h5 id="安装docker社区版-启动docker服务并进行验证"><a href="#安装docker社区版-启动docker服务并进行验证" class="headerlink" title="安装docker社区版, 启动docker服务并进行验证"></a>安装docker社区版, 启动docker服务并进行验证</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum -y install docker-ce</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> service docker start</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker version</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603224401609.png" alt="image-20200603224401609"></p><p>从结果可以看出，docker安装时会默认安装客户端和服务端且版本一致，同时将客户端默认连接到服务端。</p><p>#####docker的hello-world</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull hello-world</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run hello-world</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603225249643.png" alt="image-20200603225249643"></p><p>从输出结果可以看出docker已经安装成功。但是dockerHub的镜像都在海外，在拉取时经常会存在掉速或者直接断开的情况。这时我们需要配置一下阿里云的镜像加速服务。</p><h5 id="配置容器镜像加速服务"><a href="#配置容器镜像加速服务" class="headerlink" title="配置容器镜像加速服务"></a>配置容器镜像加速服务</h5><p>登录阿里云账号，并在首页搜索框中搜索“容器镜像服务”</p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603225845748.png" alt="image-20200603225845748" style="zoom:50%;" /><p>打开容器镜像服务的控制台后，在右面的菜单栏中的最下面有“镜像加速器”，点进去后，你会发现里面已经生成了镜像加速地址。将centos的配置脚步直接复制，粘贴到shell中就完成了配置。</p><p>最后，测试一下拉取tomcat容器的速度，发现效果非常的好</p><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603230535168.png" alt="image-20200603230535168"></p>]]></content>
+    <content type="html"><![CDATA[<p>#####安装yum扩展安装工具和存储驱动程序</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum install -y yum-utils device-mapper-persistent-data lvm2</span></span><br></pre></td></tr></table></figure><h5 id="添加阿里云的docker镜像repo并生成缓存"><a href="#添加阿里云的docker镜像repo并生成缓存" class="headerlink" title="添加阿里云的docker镜像repo并生成缓存"></a>添加阿里云的docker镜像repo并生成缓存</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> yum makecache fast</span></span><br></pre></td></tr></table></figure><a id="more"></a><h5 id="安装docker社区版-启动docker服务并进行验证"><a href="#安装docker社区版-启动docker服务并进行验证" class="headerlink" title="安装docker社区版, 启动docker服务并进行验证"></a>安装docker社区版, 启动docker服务并进行验证</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> yum -y install docker-ce</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> service docker start</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker version</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603224401609.png" alt="image-20200603224401609"></p><p>从结果可以看出，docker安装时会默认安装客户端和服务端且版本一致，同时将客户端默认连接到服务端。</p><p>#####docker的hello-world</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull hello-world</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker run hello-world</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603225249643.png" alt="image-20200603225249643"></p><p>从输出结果可以看出docker已经安装成功。但是dockerHub的镜像都在海外，在拉取时经常会存在掉速或者直接断开的情况。这时我们需要配置一下阿里云的镜像加速服务。</p><h5 id="配置容器镜像加速服务"><a href="#配置容器镜像加速服务" class="headerlink" title="配置容器镜像加速服务"></a>配置容器镜像加速服务</h5><p>登录阿里云账号，并在首页搜索框中搜索“容器镜像服务”</p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603225845748.png" alt="image-20200603225845748" style="zoom:50%;" /><p>打开容器镜像服务的控制台后，在右面的菜单栏中的最下面有“镜像加速器”，点进去后，你会发现里面已经生成了镜像加速地址。将centos的配置脚步直接复制，粘贴到shell中就完成了配置。</p><p>最后，测试一下拉取tomcat容器的速度，发现效果非常的好</p><p><img src="https://gitee.com/AD_lv/my_blog_image/raw/master/img/image-20200603230535168.png" alt="image-20200603230535168"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;#####安装yum扩展安装工具和存储驱动程序&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;
-      
+      &lt;p&gt;#####安装yum扩展安装工具和存储驱动程序&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; yum install -y yum-utils device-mapper-persistent-data lvm2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;添加阿里云的docker镜像repo并生成缓存&quot;&gt;&lt;a href=&quot;#添加阿里云的docker镜像repo并生成缓存&quot; class=&quot;headerlink&quot; title=&quot;添加阿里云的docker镜像repo并生成缓存&quot;&gt;&lt;/a&gt;添加阿里云的docker镜像repo并生成缓存&lt;/h5&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; yum sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; yum makecache fast&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
