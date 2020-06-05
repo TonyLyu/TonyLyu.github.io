@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://codehao.cn/categories/index.html</loc>
+    
+    <lastmod>2020-06-05T07:16:37.059Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://codehao.cn/tags/index.html</loc>
+    
+    <lastmod>2020-06-05T07:14:37.039Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://codehao.cn/about/index.html</loc>
+    
+    <lastmod>2020-06-05T07:13:41.221Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://codehao.cn/2020/06/03/docker%E6%95%99%E7%A8%8B%EF%BC%881%EF%BC%89-centos%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E4%BA%8E%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2020-06-03T15:14:01.934Z</lastmod>
@@ -19,27 +40,6 @@
     <loc>https://codehao.cn/2020/04/19/hello-world/</loc>
     
     <lastmod>2020-06-01T14:41:21.490Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://codehao.cn/categories/index.html</loc>
-    
-    <lastmod>2020-05-31T01:47:02.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://codehao.cn/tags/index.html</loc>
-    
-    <lastmod>2020-05-31T01:40:36.813Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://codehao.cn/about/index.html</loc>
-    
-    <lastmod>2020-05-27T15:33:15.649Z</lastmod>
     
   </url>
   
